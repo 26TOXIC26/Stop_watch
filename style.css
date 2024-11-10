@@ -1,0 +1,267 @@
+body{
+	background-image: url('background.png');
+	/* background-size: 100%;
+	background-repeat: no-repeat; */
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#title{
+	width: 250px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	background: rgba(6, 5, 34, 0.438);
+	border-radius: 20px;
+}
+
+#stopwatch{
+	width: 1500px;
+	height: 460px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(6, 5, 34, 0.664);
+	border-radius: 20px;
+	/* border: 1px solid #ffffff; */
+	/* border: 1px solid #000000; */
+}
+
+
+#output{
+	font-size: 200px;
+	width: 100%;
+	color: #ffffff;
+	height: 200px;
+	margin-top: 50px;
+	/* background-color: rgba(6, 5, 34, 0.438); */
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#controls{
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	width: 150px;
+	height: 75px;
+	font-size: 24px;
+	margin: 0 40px;
+	border: none;
+	border-radius: 25px;
+	font-weight: bold;
+	transition: 0.15s ease;
+	cursor: pointer;
+}
+
+
+@media screen and (min-width: 672px) and (max-width: 790px){
+	#stopwatch{
+		width: 90%;
+		height: 330px;
+	}
+	#output{
+		font-size: 100px;
+	}
+
+	#title{
+		width: 200px;
+		height: 40px;
+		font-size: 25px;
+	}
+
+	button {
+		width: 100px;
+		height: 50px;
+		font-size: 18px;
+		margin: 0 20px;
+	}
+}
+
+@media screen and (min-width: 790px) and (max-width: 1024px){
+	#stopwatch{
+		width: 800px;
+		height: 330px;
+	}
+	#output{
+		font-size: 100px;
+	}
+
+	#title{
+		width: 200px;
+		height: 40px;
+		font-size: 25px;
+	}
+
+	button {
+		width: 100px;
+		height: 50px;
+		font-size: 18px;
+		margin: 0 20px;
+	}
+}
+
+button:active {
+	translate: 0 3.6px;
+}
+
+#start{
+	background-color: white;
+	color: #080e1f;
+	/* border: 1px solid #00B4D8; */
+}
+
+#start:hover{
+	background-color: #003377;
+	color: white;
+	border: 1px solid white;
+}
+
+#reset{
+	background-color: #080e1f;
+	color: #ffffff;
+	border: 0.3px solid #ffffff;
+	/* border: 1px solid #00B4D8; */
+}
+
+#reset:hover{
+	border: 1px solid red;
+	color: red;
+}
+
+.soc
+{
+	position: absolute;
+	bottom: 1%;
+	left: 1%;
+	background-color: rgba(6, 5, 34, 0.438);
+	border-radius: 20px;
+    display: flex;
+    width: 300px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialContainer {
+	width: 52px;
+    height: 52px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    /* overflow: hidden; */
+    transition-duration: .3s;
+    margin: 0px 7.5px 0px 7.5px;
+}
+
+.socialContainer:hover {
+	border: 1px solid #ffffff;
+
+}
+
+.containerOne:hover {
+    background-color: #000000;
+    transition-duration: .3s;
+    scale: 1.1;
+}
+.containerTwo:hover {
+	background-color: #000000;
+	transition-duration: .3s;
+	scale: 1.1;
+}
+.containerThree:hover {
+	background-color: #000000;
+      transition-duration: .3s;
+      scale: 1.1;
+	}
+
+	.containerFour:hover {
+		background-color: #000000;
+		transition-duration: .3s;
+		scale: 1.1;
+	}
+
+	.socialContainer:active {
+		transform: scale(0.9);
+		transition-duration: .3s;
+	}
+
+	.socialSvg {
+		width: 17px;
+  }
+
+  .githubSVG
+  {
+	  width: 24px;
+	}
+
+	.socialSvg path {
+		fill: #014189;
+	}
+
+	.socialContainer:hover .instagramSvg path{
+		fill: rgb(214, 16, 148);
+	}
+	.socialContainer:hover .githubSVG path{
+    fill: rgb(255, 255, 255);
+  }
+  .socialContainer:hover .linkdinSvg path{
+	  fill: rgb(0, 64, 182);
+  }
+  .socialContainer:hover .whatsappSvg path{
+    fill: #25D366;
+  }
+
+@media screen and (max-width: 672px){
+  #stopwatch{
+	  width: 95%;
+	  height: 230px;
+  }
+
+  #output{
+	  font-size: 50px;
+  }
+
+  #title{
+	  width: 200px;
+	  height: 40px;
+	  font-size: 25px;
+  }
+
+  button {
+	  width: 100px;
+	  height: 50px;
+	  font-size: 18px;
+	  margin: 0 20px;
+  }
+
+  .soc
+  {
+	  /* display: flex;
+	  justify-content: center;
+	  align-items: center; */
+	  width: 100%;
+  }
+}
